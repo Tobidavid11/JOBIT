@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .right-container {
+  display: block;
+  margin-bottom: 3rem;
+  margin: 1rem;
+
+}
+.right-container-card {
+  background-color: var(--mixed-black-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.right-container-card-sect {
+  padding: 1rem 0.8rem;
+}
+
+.right-container-card-sect:not(:last-child) {
+  border-bottom: 1px solid var(--grey-color-200);
+}
+
+.right-container-card-sect-head {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.right-container-card-sect-post-title {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.right-container-card-sect-post-title:hover {
+  color: var(--primary-color);
+}
+.header{
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top:5rem;
+    margin-bottom:5px;
+    cursor: pointer;
+    width: max-content;
+}
+.header:hover{
+    color:var(--primary-color);
+}
+    </style>
+    <nav class="navbar-3-container">
+        <div class="navbar-3">
+          <div class="navbar-3-left">
+            <span id="sidebar-open">
+              <i class="bi bi-list"></i>
+            </span>
+            <!-- <img src="img/second logo-1.png" alt="Logo" /> -->
+            <div class="navbar-3-search">
+              <input type="text" placeholder="Search Jobit..." />
+              <span>
+               <a href="search.html"> <i class="bi bi-search"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="navbar-3-links">
+         
+  
+            <button id="create-post-btn">
+              <a href="new-post.html">Create Post</a>
+            </button>
+            <div id="bell-wrapper">
+                <a href="notification.html">
+              <span id="notification-count">9</span></a>
+              <a href="notification.html"> <i class="bi bi-bell"></i></a>
+            </div>
+            <div class="navbar-3-avatar">
+              <a href="account.html">
+                <img src="img/jobit logo.jpg" alt="User Avatar" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="header">Notifications</div>
+       <!--Beginning of right Container-->
+       <div class="right-container">
+        <!--Beginning of right Container Card-->
+        <div class="right-container-card">
+          <div class="right-container-card-sect">
+            <a href="home.html" class="right-container-card-sect-head"
+              >#recent</a
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Grab the opportunity to work as an estate manager at your
+              comfortable zone</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >20likes,3share and 40commented</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Don't loose the opport to becom the manager of the five stars
+              hotel today!.</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >20 comments</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Job Admin posted 3 days ago</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >20 others like jobit admins post 2days ago</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Jobit User-1 posted 3hours ago</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >2 comments</span
+            >
+          </div>
+        </div>
+        <!--End of right Container Card-->
+
+        <!--Beginning of right Container Card-->
+        <div class="right-container-card">
+          <div class="right-container-card-sect">
+            <a href="home.html" class="right-container-card-sect-head"
+              >#Older</a
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Grab the opportunity to work as anestate manager in your
+              comfortable zone</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >2 comments</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Grab the opportunity to work as anestate manager in your
+              comfortable zone</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >2 comments</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Grab the opportunity to work as anestate manager in your
+              comfortable zone</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >2 comments</span
+            >
+          </div>
+          <div class="right-container-card-sect">
+            <a class="right-container-card-sect-post-title" href="home.html"
+              >Grab the opportunity to work as anestate manager in your
+              comfortable zone</a
+            >
+            <span class="right-container-card-sect-post-comment"
+              >2 comments</span
+            >
+          </div>
+        </div>
+        <!--End of right Container Card-->
+      </div>
+      <!--End of right Container-->
+</body>
+</html>

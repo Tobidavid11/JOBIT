@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>JOBIT | SIGN UP</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f0f0f0;
+      margin-top: 60px; /* Adjust margin-top to accommodate the fixed navbar */
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar img {
+      height: 40px;
+    }
+    .container {
+      width: 90%; /* Adjusted width for responsiveness */
+      max-width: 30em;
+      margin: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 2px 2px #5c5b5b;
+      border-radius: 10px;
+      background-color: white;
+      margin-top: 100px; /* Adjusted margin-top for better centering */
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      display: flex;
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+    .btn-ctn {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+    #Create-btn {
+      border: 1.5px solid rgb(2, 109, 2);
+      border-radius: 10px;
+    }
+    #Create-btn a {
+      color: rgb(8, 8, 8);
+      text-decoration: none;
+    }
+    #Create-btn:hover {
+      border: 1.5px solid #d48d09;
+      transition: 0.3s;
+    }
+    #cancel-btn a {
+      color: #d48d09;
+      text-decoration: none;
+    }
+    #cancel-btn a:hover {
+      color: rgb(2, 109, 2);
+    }
+    #cancel-btn {
+      border: none;
+      outline: none;
+    }
+    .terms-checkbox {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    #checkbox {
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+    span a {
+      color: blue;
+      align-items: center;
+      text-decoration: none;
+    }
+    #sign-in {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+    i {
+      font-size: 20px;
+      align-items: center;
+      padding-top: 3px;
+      padding-left: 3px;
+      color: blue;
+    }
+
+    /* Media Query for Small Screens */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+      input {
+        width: 100%;
+      }
+      .btn-ctn {
+        flex-direction: row;
+      }
+      button {
+        width: 48%;
+      }
+    }
+    select{
+      display: flex;
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+.message{
+  height: 3rem;
+  border-radius: 5px;
+border:1px solid #d48d09;
+}
+  </style>
+</head>
+<body class="overall-body">
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="img/second logo.png" alt="">
+  </div>
+  <div class="nav-right">
+    <a href="jobit.html">LANDING PAGE</a>
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="join.html">SIGN UP</a>
+    <a href="sign-in.html">LOG IN</a>
+  </div>
+  <div class="nav-toggle" id="menu-toggle">&#9776;</div>
+</nav>
+<div class="container">
+  <span
+    style="
+          color: #111;
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: 550;
+        "
+  >FILL THE FORM BELOW !!</span><br>
+  <label for="name">First and Lastname</label>
+  <div style="display: flex; gap: 5%">
+    <input type="text" placeholder="First name" required />
+    <input type="text" placeholder="Last name" required /><br />
+  </div>
+  <label for="email">Email</label>
+  <input
+    type="email"
+    style="width: 100%"
+    placeholder="Email"
+    required
+  /><br />
+  <label for="email">Phone Number</label>
+  <input
+    type="tel"
+    style="width: 100%"
+    placeholder="08123455554"
+    required
+  /><br />
+  <label for="rel">Religion</label>
+  <select name="religion" id="select-option">
+    <option value="religion">Christianity</option>
+    <option value="religion">Islam</option>
+  </select><br>
+  <label for="Country">Country</label>
+  <select name="select" id="select-option">
+    <option value="">Algeria</option>
+    <option value="">Benin Republic</option>
+    <option value="">Cote de'ivore</option>
+    <option value="">Egypt</option>
+    <option value="">Filland</option>
+    <option value="">Ghana</option>
+  </select><br>
+  <label for="statte">State</label>
+  <input type="text" placeholder="Enter your state" required><br>
+ <label for="date of birth">Date of Birth</label>
+  <input type="date"><br>
+
+<label for="address">Enter detailed address</label>
+<input type="text">
+  <label for="school-level">Marital status</label>
+  <select name="select" id="select-option">
+    <option value="">Single</option>
+    <option value="">Married</option>
+    <option value="">Divorced</option>
+  </select>  <br>
+  <select name="select" id="select-option">
+    <option value="">High School</option>
+    <option value="">National Diploma [ND]</option>
+    <option value="">National Certificate in Education [NCE]</option>
+    <option value="">Higher National Diploma [HND]</option>
+    <option value="">Degree [B.sc,B.ed,B.at]</option>
+    <option value="">Masters</option>
+    <option value="">Doctor of Philoshopy [Ph.d]</option>
+  </select>
+  <label for="school-level">Experience</label>
+  <select name="select" id="select-option">
+    <option value="">1-3years</option>
+    <option value="">4-6years</option>
+    <option value="">6-8years</option>
+    <option value="">8-10years</option>
+    <option value="">10years & above</option>
+    <option value="">No Experience at all</option>
+  </select><br>
+  <label for="message">What's on your mind ?</label>
+  <input type="text" class="message" placeholder="Write a message about what what you feel about the job if granted." required><br>
+  <!-- <label for="Password">Password</label>
+  <div style="display: flex; gap: 5%">
+    <input type="password" placeholder="Choose Password" required />
+    <input type="password" placeholder="Retype Password" required />
+  </div><br> -->
+  <!-- <span class="terms-checkbox">
+        <input type="checkbox" id="checkbox" /> -->
+        <!-- <span>
+          I agree to <a href="#"> Terms of Service</a> and
+          <a href="#">Privacy policy</a>
+        </span> -->
+      <!-- </span><br>  -->
+ <div class="btn-ctn">
+    <button id="Create-btn"><a href="cv-submit.html">Submit</a></button>
+    <button id="cancel-btn"><a href="home.html">Cancel</a></button>
+  </div><br>
+   <span id="sign-in"
+    ><a href="sign-in.html">help</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+
+      @media only screen and (max-width: 760px) {
+  .navbar-3-search {
+    display:block;
+  }
+}
+        .recent-searches {
+            display: none;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            top: 100%;
+            color: white;
+            left: 0;
+            width: calc(100% - 2px);
+            z-index: 1000;
+        }
+
+        .recent-searches ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recent-searches ul li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .recent-searches ul li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar-3-container">
+        <div class="navbar-3">
+          <div class="navbar-3-left">
+            <div class="navbar-3-search">
+              <input type="text" id="search-input" placeholder="Search Jobit..." />
+          
+            </div>
+          </div>
+          <div class="navbar-3-links">
+            <button id="create-post-btn">
+              <a href="new-post.html">Create Post</a>
+            </button>
+            <div id="bell-wrapper">
+              <a href="notification.html">
+                <span id="notification-count">9</span></a
+              >
+              <a href="notification.html"> <i class="bi bi-bell"></i></a>
+            </div>
+            <div class="navbar-3-avatar">
+              <a href="account.html">
+                <img src="img/jobit logo.jpg" alt="User Avatar" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-searches">
+          <span>Recent Research</span>
+          <ul>
+         <li>Who is jonathan ?</li><br>
+         <li>Who is jonathan ?</li>
+          </ul>
+        </div>
+      </nav>
+      
+    <script>
+        document.getElementById('search-icon').addEventListener('click', function() {
+            var input = document.getElementById('search-input');
+            input.style.display = input.style.display === 'none' ? 'block' : 'none';
+            if (input.style.display === 'block') {
+                input.focus();
+            }
+        });
+
+        // Sample recent searches data (replace with actual data)
+        var recentSearchesData = ['Recent Search 1', 'Recent Search 2', 'Recent Search 3'];
+
+        // Function to populate recent searches
+        function populateRecentSearches() {
+            var recentSearchesContainer = document.getElementById('recent-searches');
+            var recentSearchesList = recentSearchesContainer.querySelector('ul');
+            recentSearchesList.innerHTML = '';
+            recentSearchesData.forEach(function(search) {
+                var li = document.createElement('li');
+                li.textContent = search;
+                recentSearchesList.appendChild(li);
+            });
+            recentSearchesContainer.style.display = 'block';
+        }
+
+        // Populate recent searches on page load
+        populateRecentSearches();
+    </script>
+</body>
+</html>
