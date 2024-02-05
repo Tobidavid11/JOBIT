@@ -8,7 +8,9 @@
   /* position: relative; */
   display: grid;
 }
-
+#menu-toggle{
+  background-color: transparent;
+}
 .navbar {
   z-index: 1;
   display: flex;
@@ -32,6 +34,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  background-color: transparent;
 }
 
 .nav-right a {
@@ -42,7 +45,7 @@
   font-family: sans-serif;
   position: relative;
   right: 5%;
-
+  background-color: transparent;
 }
 
 .nav-right a:hover {

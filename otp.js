@@ -2,7 +2,7 @@ const blinker = document.getElementById("blinker");
 const seconds = document.getElementById("seconds");
 const mins = document.getElementById("mins");
 
-let secs = 59;
+let secs = 60;
 let minutes = 1;
 
 function handleBlink() {
@@ -12,7 +12,7 @@ function handleBlink() {
 function handleSeconds() {
   secs--;
   if (secs < 0) {
-    secs = 59;
+    secs = 60;
     minutes--;
     if (minutes < 0) {
       clearInterval(timer);
