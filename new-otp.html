@@ -4,7 +4,6 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-  <link rel="stylesheet" href="style.css">
   <title>OTP CODE</title>
 </head>
 <style>
@@ -16,39 +15,54 @@
 
   body {
     background-color: #f0f0f0;
-    margin-top: 60px; /* Adjust margin-top to accommodate the fixed navbar */
+    margin-top: 20px; /* Adjust margin-top to accommodate the fixed navbar */
   }
 
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        background-color: #fff;
+        box-shadow: 0.5px 0.5px 0.5px rgba(194, 190, 190);
+      }
 
-  .navbar img {
-    height: 40px;
-  }
+      .navbar-left img {
+        width: 140px;
+      }
 
-  .container {
-    width: 90%; /* Adjusted width for responsiveness */
-    max-width: 30em;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 2px 2px #5c5b5b;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 100px; /* Adjusted margin-top for better centering */
-  }
+      .navbar-middle a {
+        font-weight: 600;
+        color: blue;
+        text-decoration: none;
+      }
+      .navbar-middle a:hover {
+        text-decoration: underline;
+      }
 
+      .navbar-right button {
+        padding: 10px 20px;
+        color: blue;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1.5px solid blue;
+      }
+      .navbar-right button:hover {
+        color: blue;
+        border-color: blue;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 30em;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: .5px .5px 1px 2px #d6d5d5;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 70px;
+      }
   label {
     display: block;
     margin-bottom: 5px;
@@ -62,7 +76,7 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    border-bottom: 1px solid black; /* Black underline */
+    border-bottom: 1px solid hsl(249,65%,75%); 
     outline: none;
     font-size: 16px;
   }
@@ -70,7 +84,7 @@
   .btn-ctn {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Updated to stack buttons on small screens */
+    flex-direction: column; 
     gap: 1rem;
     padding: 5px;
     justify-content: center;
@@ -78,25 +92,28 @@
   }
 
   button {
-    width: 100%; /* Updated width for full width on small screens */
+    width: 100%;
     padding: 8px;
     justify-content: center;
     align-items: center;
   }
 
   #Submit-btn {
-    border: 1.5px solid rgb(2, 109, 2);
-    border-radius: 10px;
+    border: 2px solid blue;
+      border-radius: 10px;
+      width: 10rem;
+      background-color: hsl(249,65%,75%);
   }
 
   #Submit-btn a {
-    color: rgb(8, 8, 8);
-    text-decoration: none;
+    color: #fff;
+   text-decoration: none;
   }
 
   #Submit-btn:hover {
-    border: 1.5px solid #d48d09;
-    transition: 0.3s;
+    border: 2px solid hsl(249,65%,75%);
+      transition: 0.3s;
+      background-color: blue;
   }
 
   #cancel-btn a {
@@ -105,12 +122,13 @@
   }
 
   #cancel-btn a:hover {
-    color: #d48d09;
+    color: hsl(249,65%,75%);
   }
 
   #cancel-btn {
-    border: none;
-    outline: none;
+    border: 2px solid hsl(249,65%,75%);
+      border-radius: 10px;
+      width: 10rem;
   }
 
   span {
@@ -156,23 +174,22 @@
 </style>
 
 <body>
-<nav class="navbar">
-  <div class="nav-left">
-    <img src="img/second logo.png" alt="">
-  </div>
-  <div class="nav-right">
-    <a href="jobit.html">LANDING PAGE</a>
-    <a href="home.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="join.html">SIGN UP</a>
-    <a href="sign-in.html">LOG IN</a>
-  </div>
-  <div class="nav-toggle" id="menu-toggle">&#9776;</div>
-</nav>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="img/JOBIT-NEW-LOGO.png" alt="">
+    </div>
+    <div class="navbar-middle">
+      <a href="home.html">HOME</a>
+    </div>
+    <div class="navbar-right">
+      <a href="sign-in.html"><button>SIGN IN</button></a>
+    </div>
+   
+  </nav>
 <div class="container">
   <span
     style="
-      color: #111;
+      color: hsl(249,65%,75%);
       font-family: sans-serif;
       font-size: 30px;
       font-weight: 550;
@@ -180,7 +197,7 @@
   >Password Reset</span
   >
   <span><br>
-    To reset your password, please enter the 8-digit code sent to your email.
+    To reset your password, please enter the 6-digit code sent to your email.
   </span><br>
   <label for="number">OTP</label>
   <div id="otp-container">

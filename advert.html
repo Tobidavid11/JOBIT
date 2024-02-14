@@ -40,21 +40,37 @@
     margin-left: 20px;
   }
   .header{
-    display: flex;
+    display: block;
     gap: 3rem;
+    align-items: center;
+
+  }
+  .back-btn{
+    font-size: 30px;
+    background-color: rgb(2, 109, 2);
+    padding: 3px;
+    border-radius: 50px;
+    width: max-content;
+  }
+  .back-btn i{
+    color: #fff;
+  }
+  .back-btn i:active{
+    color: #ccc;
+  }
+  .back-btn:active{
+    background-color: #111;
   }
 </style>
 </head>
 <body>
+  <span class="back-btn">
+    <a href="home.html"><i class="bi bi-x-circle"></i>
+    </a>
+    </span>
 <div class="container">
-
-<div class="header">
-  <a href="home.html"><i  class="bi-back arrow"></i>
-  </a>
     <h1>Advertise on Jobit</h1>
-  </span>
- 
-</div>
+
 
   
   <p>Jobit offers advertising opportunities for businesses and individuals interested in reaching a targeted audience of job seekers and professionals. Our platform provides various advertising options to suit your needs and budget.</p>
